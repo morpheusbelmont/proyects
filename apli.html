@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la Lingüística</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS para estilos -->
+
+    <style>
+        /* Estilos para el botón */
+        .boton-subir {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Introducción a la Lingüística</h1>
+    </header>
+    <nav>
+        <ul>
+<!-- Botón de Volver -->
+<a href="index.html" class="btn-volver"><i class="fas fa-home"></i> Volver al Inicio</a>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Aplicaciones</h2>
+            <p>Las aplicaciones de la lingüística se refieren a la utilización de los principios y métodos de la lingüística en diversos campos fuera de la investigación académica. Algunas áreas en las que la lingüística tiene aplicaciones prácticas incluyen::
+                
+                <p><b><em>Enseñanza de Idiomas:</p></b></em> La lingüística proporciona conocimientos sobre la estructura y el funcionamiento de los idiomas, que se aplican en la enseñanza y aprendizaje de lenguas extranjeras.
+                
+                <p><b><em>Procesamiento del Lenguaje Natural (PLN):</p></b></em> Se refiere a la aplicación de técnicas computacionales para entender y generar lenguaje humano, como en la traducción automática, la búsqueda de información y la síntesis de voz.
+                
+                <p><b><em>Lingüística Forense:</p></b></em> Se utiliza en la identificación de hablantes a partir de muestras de voz, el análisis de textos para determinar autoría y la resolución de disputas legales relacionadas con el lenguaje.
+                
+                <p><b><em>Planificación del Discurso:</em></b></p> Se aplica en la creación de mensajes persuasivos en publicidad y marketing, así como en la redacción de discursos políticos y empresariales.
+                
+                <p><b><em>Desarrollo de Software de Reconocimiento de Voz: </em></b></p> Se basa en los principios de la fonética y la sintaxis para desarrollar sistemas que puedan entender y procesar el habla humana.
+                
+                En resumen, la lingüística tiene una amplia gama de aplicaciones prácticas en diversos campos, desde la enseñanza de idiomas hasta la tecnología del habla y la comunicación intercultural. Estas aplicaciones demuestran la relevancia y la importancia de la lingüística en la vida cotidiana y en la sociedad en general.
+            
+            </p>
+        </section>
+    </main>
+
+     <!-- Botón -->
+     <button class="boton-subir" onclick="subirArriba()">Subir</button>
+
+     <script>
+         // Función para subir al principio de la página
+         function subirArriba() {
+             window.scrollTo({ top: 0, behavior: 'smooth' });
+         }
+     </script>
+    <footer>
+        <p><span style="color: #ebdcdc72;">© 2024 Curso de Lingüística Básica. Diseñado por el Esp. Carlos Eduardo Sepúlveda Toro. Todos los derechos reservados.</span></p>
+    </footer>
+</body>
+</html>

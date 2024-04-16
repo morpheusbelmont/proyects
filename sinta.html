@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la Lingüística</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS para estilos -->
+
+    <style>
+        /* Estilos para el botón */
+        .boton-subir {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <header>
+        <h1>Introducción a la Lingüística</h1>
+    </header>
+    <nav>
+        <ul>
+<!-- Botón de Volver -->
+<a href="index.html" class="btn-volver"><i class="fas fa-home"></i> Volver al Inicio</a>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Sintaxis</h2>
+            <p>La sintaxis es una rama de la lingüística que se centra en el estudio de la estructura y organización de las palabras dentro de las oraciones para formar unidades gramaticales más complejas, como las frases y los párrafos. En resumen, la sintaxis se ocupa de cómo las palabras se combinan para crear significado y cómo estas combinaciones siguen reglas gramaticales específicas dentro de una lengua.
+
+                La sintaxis analiza la relación entre los elementos de una oración, como el sujeto, el verbo, el objeto y los modificadores, así como la forma en que estas relaciones afectan el significado de la oración. También examina las reglas gramaticales que gobiernan la estructura de las oraciones, como la concordancia entre sujetos y verbos, la colocación de los elementos dentro de la oración y la formación de oraciones complejas mediante la coordinación y la subordinación.
+                
+                En resumen, la sintaxis es fundamental para comprender cómo se construyen las oraciones en una lengua y cómo estas construcciones contribuyen al significado y la comunicación efectiva.</p>
+        </section>
+    </main>
+
+    <button class="boton-subir" onclick="subirArriba()">Subir</button>
+
+    <script>
+        // Función para subir al principio de la página
+        function subirArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+    <footer>
+        <p><span style="color: #ebdcdc72;">© 2024 Curso de Lingüística Básica. Diseñado por el Esp. Carlos Eduardo Sepúlveda Toro. Todos los derechos reservados.</span></p>
+    </footer>
+</body>
+</html>

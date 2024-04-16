@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la Lingüística</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS para estilos -->
+
+    <style>
+        /* Estilos para el botón */
+        .boton-subir {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Introducción a la Lingüística</h1>
+    </header>
+    <nav>
+        <ul>
+<!-- Botón de Volver -->
+<a href="index.html" class="btn-volver"><i class="fas fa-home"></i> Volver al Inicio</a>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Fonética</h2>
+            <p>La fonética es una rama de la lingüística que se encarga del estudio de los sonidos del habla, su producción, transmisión y percepción. A continuación, se desarrollan los principales aspectos relacionados con la fonética:
+
+                <p>Clasificación de los Sonidos del Habla</p>
+                Los sonidos del habla pueden clasificarse de diversas maneras según sus características articulatorias y acústicas. Una de las clasificaciones más comunes es la que distingue entre sonidos consonánticos y sonidos vocálicos.</p>
+        </section>
+        <section>
+            <h2>Sonidos Vocálicos y Consonánticos</h2>
+            <p>Sonidos Consonánticos: Estos sonidos se producen mediante la obstrucción total o parcial del flujo de aire en alguna parte del tracto vocal. Ejemplos de sonidos consonánticos son /p/, /t/, /s/, /m/, etc.
+
+                Sonidos Vocálicos: Estos sonidos se caracterizan por la ausencia de obstrucción en el tracto vocal y por la libre vibración de las cuerdas vocales. Ejemplos de sonidos vocálicos son /a/, /e/, /i/, /o/, /u/, etc.</p>
+        </section>
+        <section>
+            <h2>Relación entre Lenguaje y Cultura</h2>
+            <p>El lenguaje y la cultura están intrínsecamente relacionados. El lenguaje no solo es una herramienta de comunicación, sino también un reflejo de la cultura de una sociedad. A través del lenguaje, transmitimos conocimientos, valores, creencias y tradiciones de generación en generación.
+
+                Por ejemplo, las diferentes lenguas del mundo reflejan las diferentes realidades culturales de las comunidades que las hablan. Cada lengua tiene su propio vocabulario, su propia gramática y sus propias formas de expresión, que están moldeadas por las experiencias y las necesidades de quienes las utilizan.
+                
+                Además, el lenguaje no solo refleja la cultura, sino que también la moldea. Las palabras que utilizamos y las formas en que las combinamos para formar oraciones tienen un impacto en cómo pensamos y percibimos el mundo que nos rodea. Por lo tanto, el estudio del lenguaje es fundamental para comprender las dinámicas culturales y sociales de una comunidad.</p>
+        </section>
+    </main>
+    <footer>
+        <p><span style="color: #ebdcdc72;">© 2024 Curso de Lingüística Básica. Diseñado por el Esp. Carlos Eduardo Sepúlveda Toro. Todos los derechos reservados.</span></p>
+    </footer>
+
+    <h2></h2>
+    <!-- Botón -->
+    <button class="boton-subir" onclick="subirArriba()">Subir</button>
+
+    <script>
+        // Función para subir al principio de la página
+        function subirArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

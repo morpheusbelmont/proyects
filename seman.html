@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la Lingüística</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS para estilos -->
+    
+    <style>
+        /* Estilos para el botón */
+        .boton-subir {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Introducción a la Lingüística</h1>
+    </header>
+    <nav>
+        <ul>
+<!-- Botón de Volver -->
+<a href="index.html" class="btn-volver"><i class="fas fa-home"></i> Volver al Inicio</a>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Semántica</h2>
+            <p>La semántica es la rama de la lingüística que se encarga del estudio del significado en el lenguaje. Se centra en entender cómo las palabras, frases, oraciones y otros elementos lingüísticos transmiten significado y cómo ese significado es interpretado por hablantes y oyentes.
+
+                <br>En resumen, la semántica se ocupa de responder preguntas como qué significan las palabras, cómo se combinan para formar significados más complejos y cómo se relacionan con el mundo real y las experiencias de los hablantes.
+                
+                La semántica abarca diferentes áreas de estudio, como:
+                
+                <p><b><em>1. Significado léxico:</p></b></em> Analiza el significado de las palabras individuales y cómo se relacionan con otras palabras en el vocabulario.
+                
+                <p><b><em>2. Semántica de las frases y oraciones:</p></b></em> Examina cómo las palabras se combinan para formar frases y oraciones con significado completo, y cómo este significado puede ser afectado por la estructura gramatical.
+                
+                <p><b><em>3. Pragmática:</p></b></em> Se centra en el significado en contexto y cómo los hablantes interpretan y producen mensajes dentro de situaciones específicas.
+                
+                <p><b><em>4. Relaciones semánticas:</em></b></p> Estudia las relaciones entre palabras, como sinónimos, antónimos, hiperónimos, hipónimos, entre otros, y cómo estas relaciones contribuyen al significado global de un texto.
+                
+                En resumen, la semántica es esencial para comprender cómo el lenguaje transmite significado y cómo las personas interactúan y se comunican a través del uso del lenguaje.</p>
+        </section>
+    </main>
+
+    <button class="boton-subir" onclick="subirArriba()">Subir</button>
+
+    <script>
+        // Función para subir al principio de la página
+        function subirArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+
+    <footer>
+        <p><span style="color: #ebdcdc72;">© 2024 Curso de Lingüística Básica. Diseñado por el Esp. Carlos Eduardo Sepúlveda Toro. Todos los derechos reservados.</span></p>
+    </footer>
+</body>
+</html>

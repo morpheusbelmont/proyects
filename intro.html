@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la Lingüística</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS para estilos -->
+   
+   <style>
+        /* Estilos para el botón */
+        .boton-subir {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Introducción a la Lingüística</h1>
+    </header>
+    <nav>
+        <ul>
+<!-- Botón de Volver -->
+<a href="index.html" class="btn-volver"><i class="fas fa-home"></i> Volver al Inicio</a>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Introducción a la Lingüística</h2>
+            <p>La lingüística es una disciplina que estudia el lenguaje humano en todas sus dimensiones. Desde los sonidos que producimos al hablar hasta la manera en que construimos significado a través de las palabras, la lingüística nos ayuda a entender cómo funciona el lenguaje y cómo lo utilizamos para comunicarnos</p>
+        </section>
+        <section>
+            <h2>Definición y Objetivos de la Lingüística</h2>
+            <p>La lingüística se define como la ciencia que se encarga de estudiar el lenguaje humano en sus aspectos tanto formales como funcionales. Esto incluye el análisis de la estructura de las lenguas, la manera en que se adquieren y utilizan, así como su papel en la sociedad y la cultura.
+
+                Los objetivos de la lingüística son múltiples. En primer lugar, busca describir las lenguas naturales en todas sus variedades y manifestaciones. Esto implica analizar la gramática, la fonología, la semántica y otros aspectos del sistema lingüístico.
+                
+                Además, la lingüística también se interesa por explicar cómo se produce y se comprende el lenguaje. Esto implica estudiar los procesos cognitivos y neurológicos que subyacen al uso del lenguaje, así como los factores sociales y culturales que influyen en la comunicación verbal.
+                
+                En resumen, la lingüística busca entender el lenguaje humano en su totalidad, desde su estructura interna hasta su función en la interacción social.</p>
+        </section>
+        <section>
+            <h2>Relación entre Lenguaje y Cultura</h2>
+            <p>El lenguaje y la cultura están intrínsecamente relacionados. El lenguaje no solo es una herramienta de comunicación, sino también un reflejo de la cultura de una sociedad. A través del lenguaje, transmitimos conocimientos, valores, creencias y tradiciones de generación en generación.
+
+                Por ejemplo, las diferentes lenguas del mundo reflejan las diferentes realidades culturales de las comunidades que las hablan. Cada lengua tiene su propio vocabulario, su propia gramática y sus propias formas de expresión, que están moldeadas por las experiencias y las necesidades de quienes las utilizan.
+                
+                Además, el lenguaje no solo refleja la cultura, sino que también la moldea. Las palabras que utilizamos y las formas en que las combinamos para formar oraciones tienen un impacto en cómo pensamos y percibimos el mundo que nos rodea. Por lo tanto, el estudio del lenguaje es fundamental para comprender las dinámicas culturales y sociales de una comunidad.</p>
+        </section>
+    </main>
+    <footer>
+        <p><span style="color: #ebdcdc72;">© 2024 Curso de Lingüística Básica. Diseñado por el Esp. Carlos Eduardo Sepúlveda Toro. Todos los derechos reservados.</span></p>
+    </footer>
+
+    <!-- Botón -->
+    <button class="boton-subir" onclick="subirArriba()">Subir</button>
+
+    <script>
+        // Función para subir al principio de la página
+        function subirArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

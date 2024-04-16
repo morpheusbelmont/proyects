@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Lingüística Básica</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS para estilos -->
+
+    <style>
+        /* Estilos para el contenido emergente */
+        .ventana-emergente {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+        /* Estilos para el fondo oscuro detrás de la ventana emergente */
+        .fondo-oscuro {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Curso de Lingüística Básica</h1>
+        <nav>
+            <ul>
+                <body>
+                    <!-- Botones -->
+                    <button onclick="mostrarVentana('introduccion')">INTRODUCCIÓN</button>
+                    <button onclick="mostrarVentana('fonetica')">FONÉTICA</button>
+                    <button onclick="mostrarVentana('morfologia')">MORFOLOGÍA</button>
+                    <button onclick="mostrarVentana('sintaxis')">SINTAXIS</button>
+                    <button onclick="mostrarVentana('semantica')">SEMÁNTICA</button>
+                    <button onclick="mostrarVentana('pragmatica')">PRAGMÁTICA</button>
+                    <button onclick="mostrarVentana('aplicaciones')">APLICACIONES</button>
+                    <button onclick="mostrarVentana('evaluacion')">EVALUACIÓN</button>
+                
+                    <!-- Contenido de las ventanas emergentes -->
+                    <div id="introduccion" class="ventana-emergente">
+                        <h2>Introducción</h2>
+                        <p style="color: rgb(44, 47, 48)">La lingüística estudia el lenguaje humano. La fonética analiza los sonidos del habla. La morfología se enfoca en la estructura de las palabras.</p>
+                        <p><a href="intro.html"><b>+ info</a></b></p>
+                        <button onclick="cerrarVentana('introduccion')">Cerrar</button>
+                    </div>
+                    <div id="fonetica" class="ventana-emergente">
+                        <h2>Fonética</h2>
+                        <p style="color: rgb(44, 47, 48)">La fonética analiza la producción y percepción de los sonidos del habla. Estudia la articulación y acústica de los sonidos. Clasifica los sonidos en consonantes y vocales.</p>
+                        <p><a href="fone.html"><b>+ info</a></b></p>
+                        <button onclick="cerrarVentana('fonetica')">Cerrar</button>
+                    </div>
+                    <div id="morfologia" class="ventana-emergente">
+                        <h2>Morfología</h2>
+                        <p style="color: rgb(44, 47, 48)">La morfología examina la estructura interna de las palabras. Analiza los morfemas y su combinación. Clasifica los morfemas en raíces, prefijos y sufijos.</p>
+                        <p><a href="morfo.html"><b>+ info</a></b></p>
+                        <button onclick="cerrarVentana('morfologia')">Cerrar</button>
+                    </div>
+                    <div id="sintaxis" class="ventana-emergente">
+                        <h2>Sintaxis</h2>
+                        <p style="color: rgb(44, 47, 48)">La sintaxis estudia la estructura y organización de las palabras en oraciones. Analiza la relación entre elementos como sujeto, verbo y objeto. Se enfoca en las reglas gramaticales que rigen la formación de oraciones.</p>
+                        <p><a href="sinta.html"><b>+ info</a></b></p>
+                        <button onclick="cerrarVentana('sintaxis')">Cerrar</button>
+                    </div>
+                    <div id="semantica" class="ventana-emergente">
+                        <h2>Semántica</h2>
+                        <p style="color: rgb(44, 47, 48)">La semántica se centra en el significado del lenguaje. Analiza cómo las palabras transmiten significado. Estudia las relaciones de significado entre palabras y su interpretación en contextos específicos.</p>
+                        <p><a href="seman.html"><b>+ info</a></b></p>
+                        <button onclick="cerrarVentana('semantica')">Cerrar</button>
+                    </div>
+                    <div id="pragmatica" class="ventana-emergente">
+                        <h2>Pragmática</h2>
+                        <p style="color: rgb(44, 47, 48)">La pragmática estudia el uso del lenguaje en situaciones reales. Analiza cómo se interpretan los mensajes en contexto. Se enfoca en la comunicación efectiva y las inferencias que se hacen durante la interacción lingüística.</p>
+                        <p><a href="prag.html"><b>+ info</a></b></p>
+                        <button onclick="cerrarVentana('pragmatica')">Cerrar</button>
+                    </div>
+                    <div id="aplicaciones" class="ventana-emergente">
+                        <h2>Aplicaciones</h2>
+                        <p style="color: rgb(44, 47, 48)">Las aplicaciones de la lingüística se extienden a diversos campos prácticos. Se utiliza en la enseñanza de idiomas, el procesamiento del lenguaje natural y la lingüística forense. También se aplica en el desarrollo de software de reconocimiento de voz y en la planificación del discurso..</p>
+                        <p><a href="apli.html"><b>+ info</a></b></p>
+                        <button onclick="cerrarVentana('aplicaciones')">Cerrar</button>
+                    </div>
+                    <div id="evaluacion" class="ventana-emergente">
+                        <h2>Evaluación</h2>
+                        <p style="color: rgb(44, 47, 48)">En la sisguiente actividad realiza los ejercicios</p>
+                        <p><a href="app2/index.html"><b>+ info</a></b></p>
+                        <button onclick="cerrarVentana('evaluacion')">Cerrar</button>
+                    </div>
+                
+                    <!-- Fondo oscuro detrás de la ventana emergente -->
+                    <div class="fondo-oscuro"></div>
+                
+                    <script>
+                        // Función para mostrar una ventana emergente
+                        function mostrarVentana(idVentana) {
+                            document.getElementById(idVentana).style.display = "block";
+                            document.querySelector(".fondo-oscuro").style.display = "block";
+                        }
+                
+                        // Función para cerrar una ventana emergente
+                        function cerrarVentana(idVentana) {
+                            document.getElementById(idVentana).style.display = "none";
+                            document.querySelector(".fondo-oscuro").style.display = "none";
+                        }
+                    </script>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduccion">
+            <h2>Introducción a la Lingüística</h2>
+           Este curso cuenta con ciertos temas que te pueden ayudar conocer y aprender y tener ciertas competencias sobre el uso de la lingüística.<br>
+
+           <br><b>¡Bienvenidos!</b>
+            </ul>
+        </section>
+        <div class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h2>Introducción a la Lingüística</h2>
+                <p>La lingüística es la disciplina que estudia el lenguaje humano en todas sus dimensiones...</p>
+                <a href="#fonetica">Continuar</a>
+            </div>
+        </div>        
+    </main>
+
+      
+    <footer>
+        <p><span style="color: #ebdcdc72;">© 2024 Curso de Lingüística Básica. Diseñado por el Esp. Carlos Eduardo Sepúlveda Toro. Todos los derechos reservados.</span></p>
+    </footer>
+</body>
+</html>

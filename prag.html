@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la Lingüística</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS para estilos -->
+    <style>
+        /* Estilos para el botón */
+        .boton-subir {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Introducción a la Lingüística</h1>
+    </header>
+    <nav>
+        <ul>
+<!-- Botón de Volver -->
+<a href="index.html" class="btn-volver"><i class="fas fa-home"></i> Volver al Inicio</a>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Pragmática</h2>
+            <p>La pragmática es la rama de la lingüística que se enfoca en el estudio del uso del lenguaje en contextos reales de comunicación. Se centra en entender cómo las personas interpretan y producen mensajes en situaciones específicas, teniendo en cuenta el contexto, las intenciones del hablante y las inferencias que se hacen durante la interacción lingüística.
+
+                En resumen, la pragmática se ocupa de responder preguntas como cómo se utilizan las palabras en situaciones específicas, cómo se interpretan los mensajes en contextos particulares y cómo se logra la comunicación efectiva a través del lenguaje.
+                
+                Algunos aspectos importantes de la pragmática incluyen:
+                
+                <p><b><em>Deixis:</p></b></em> Estudia el uso de expresiones como pronombres, adverbios y demostrativos, cuyo significado depende del contexto en el que se utilizan.
+                
+                <p><b><em>Actos de habla: </p></b></em> Analiza cómo las palabras pueden usarse para realizar acciones, como pedir, prometer, preguntar, etc., y cómo se interpretan estas acciones en el contexto de la comunicación.
+                
+                <p><b><em>Presuposiciones: </p></b></em> Examina las suposiciones implícitas que subyacen en el discurso y cómo afectan la interpretación de los mensajes.
+                
+                <p><b><em>Implicaturas:</em></b></p> Estudia las inferencias que se hacen más allá del significado literal de las palabras, basadas en el contexto y el conocimiento compartido entre hablantes.
+                
+                </p>
+        </section>
+    </main>
+    <footer>
+
+        <button class="boton-subir" onclick="subirArriba()">Subir</button>
+
+        <script>
+            // Función para subir al principio de la página
+            function subirArriba() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
+
+        <p><span style="color: #ebdcdc72;">© 2024 Curso de Lingüística Básica. Diseñado por el Esp. Carlos Eduardo Sepúlveda Toro. Todos los derechos reservados.</span></p>
+    </footer>
+</body>
+</html>
